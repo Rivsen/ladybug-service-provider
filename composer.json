@@ -1,5 +1,5 @@
 {
-    "name":        "rivsen/ladybug-service-provider",
+    "name":        "rswork/ladybug-service-provider",
     "description": "Ladybug Service Provider",
     "keywords":    ["pimple", "silex", "ladybug", "service-provider"],
     "license":     "GPL-2.0+",
