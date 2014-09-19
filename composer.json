@@ -10,7 +10,6 @@
         "silex/silex":   ">=1.0",
         "raulfraile/ladybug": "~1.0"
     },
-    "target-dir" : "rswork/silex/ladybug",
     "autoload": {
         "psr-4": { "Rswork\\Silex\\": "src" }
     },
