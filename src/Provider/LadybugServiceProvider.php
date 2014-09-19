@@ -20,8 +20,19 @@ class LadybugServiceProvider implements ServiceProviderInterface
      */
     public function register(Application $app)
     {
+        $app['ladybug.options'] = array(
+            'theme' => 'modern',
+            'expanded' => false,
+            'silenced' => false,
+            'array_max_nesting_level' => 9,
+            'object_max_nesting_level' => 3,
+        );
+
         $app['ladybug.dumper'] = $app->share(function () use ($app) {
-            return new Dumper();
+            $dumper = new Dumper();
+            $dumper->setOptions( $app['ladybug.options'] );
+
+            return $dumper;
         });
 
         $app['ladybug'] = $app->share(function() use ($app){
