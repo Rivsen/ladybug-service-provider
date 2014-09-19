@@ -1,0 +1,22 @@
+{
+    "name":        "rivsen/ladybug-service-provider",
+    "description": "Ladybug Service Provider",
+    "keywords":    ["pimple", "silex", "ladybug", "service-provider"],
+    "license":     "GPL-2.0+",
+    "authors": [
+        { "name": "Rivsen Tan", "email": "rivsen1003@gmail.com" }
+    ],
+    "require": {
+        "silex/silex":   ">=1.0",
+        "raulfraile/ladybug": "~1.0"
+    },
+    "target-dir" : "rswork/silex/ladybug",
+    "autoload": {
+        "psr-4": { "Rswork\\Silex\\": "src" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    }
+}
